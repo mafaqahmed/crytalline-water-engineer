@@ -32,7 +32,7 @@ export default function RootLayout({
           backgroundPosition: "center",
         }}
       >
-        <div className="mx-auto md:max-w-[85%] my-10">
+        <div className="mx-auto max-w-[95%] md:max-w-[90%] my-5 md:my-10">
           <Navbar />
           <Sidebar />
           <WhatsappButton />
