@@ -1,10 +1,6 @@
 "use server";
-import { FaFacebookF, FaInstagram, FaMobileAlt } from "react-icons/fa";
 import constants from "../contants";
 import Link from "next/link";
-import { GrLinkedin } from "react-icons/gr";
-import { SiWhatsapp } from "react-icons/si";
-import { IoMdMail } from "react-icons/io";
 
 const Sidebar = () => {
   return (
