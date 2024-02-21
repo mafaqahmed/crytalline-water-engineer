@@ -35,6 +35,10 @@ const Main = ({
     setHide(true);
   }, []);
 
+  const eventListenerToggle = () => {
+    setHide(true);
+  };
+
   const onToggle = (e: React.MouseEvent<HTMLButtonElement>) => {
     const width = dimensions[0];
     const height = dimensions[1];
@@ -76,6 +80,13 @@ const Main = ({
       <button onClick={onToggle}>
         {Icon && <Icon className="text-lg text-gray-300" />}
       </button>
+      {!hide && (
+        <div
+          className="fixed w-screen h-full top-0 left-0"
+          onMouseDown={eventListenerToggle}
+          onScroll={eventListenerToggle}
+        ></div>
+      )}
       <div
         ref={divRef}
         className="fixed"
