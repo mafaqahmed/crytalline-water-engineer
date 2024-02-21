@@ -52,13 +52,13 @@ const Main = ({
     };
 
     if (e.clientX + width + 10 > window.innerWidth) {
-      tempPos.right = 10;
+      tempPos.right = window.innerWidth - e.clientX;
     } else {
       tempPos.left = e.clientX;
     }
 
     if (e.clientY + height + 10 > window.innerHeight) {
-      tempPos.bottom = 10;
+      tempPos.bottom = window.innerHeight - e.clientY + 10;
     } else {
       tempPos.top = e.clientY + 10;
     }
