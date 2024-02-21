@@ -4,6 +4,7 @@ import "./globals.css";
 
 import Navbar from "./components/Navbar";
 import WhatsappButton from "./components/WhatsappButton";
+import Sidebar from "./components/Sidebar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -33,6 +34,7 @@ export default function RootLayout({
       >
         <div className="mx-auto md:max-w-[85%] my-10">
           <Navbar />
+          <Sidebar />
           <WhatsappButton />
           {children}
         </div>
