@@ -20,12 +20,12 @@ const Sidebar = () => {
           }}
         >
           <div
-            className="p-3 group-hover:translate-x-3 group-hover:rounded-r-md transition-transform duration-300"
+            className="p-2 md:p-3 group-hover:translate-x-3 group-hover:rounded-r-md transition-transform duration-300"
             style={{
               backgroundColor: social.color,
             }}
           >
-            <social.img className="text-2xl" />
+            <social.img className="text-xl sm:text-2xl" />
           </div>
         </Link>
       ))}
