@@ -28,6 +28,7 @@ const Navbar = () => {
             <div className="flex gap-2 items-center">
               <Link
                 href="tel:+923337734529"
+                target="_blank"
                 className="text-xs hover:underline"
               >
                 (+92) 333 773 4529
