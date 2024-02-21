@@ -41,16 +41,14 @@ const Navbar = () => {
           <div className="sm:hidden">
             <Main Icon={IoMdMenu}>
               <div className="bg-black rounded-md w-56 h-auto">
-                <ul className="list-none space-y-2 px-5 mt-2 py-3 text-md">
+                <ul className="list-none  px-5 mt-2 py-3 text-sm">
                   {constants.routes.map((route) => (
-                    <>
-                      <li key={route.label}>
-                        <Link className="hover:underline" href={route.link}>
-                          {route.label}
-                        </Link>
-                        <hr />
-                      </li>
-                    </>
+                    <li key={route.label}>
+                      <Link className="hover:underline" href={route.link}>
+                        {route.label}
+                      </Link>
+                      <hr className="mt-1 mb-2 border-t border-gray-500" />
+                    </li>
                   ))}
                 </ul>
                 <button className="bg-secondary text-white w-[83%] mx-5 mb-2 rounded-sm cursor-pointer px-1 py-[2px] hover:bg-ternary ease-in-out">
@@ -63,13 +61,11 @@ const Navbar = () => {
         <div className="bg-primary w-[85%] hidden sm:block absolute left-1/2 transform -translate-x-1/2 top-12 border border-gray-500">
           <ul className="flex list-none items-center justify-around mx-5 my-3">
             {constants.routes.map((route) => (
-              <>
-                <li key={route.label}>
-                  <Link className="hover:underline" href={route.link}>
-                    {route.label}
-                  </Link>
-                </li>
-              </>
+              <li key={route.label}>
+                <Link className="hover:underline" href={route.link}>
+                  {route.label}
+                </Link>
+              </li>
             ))}
           </ul>
         </div>
