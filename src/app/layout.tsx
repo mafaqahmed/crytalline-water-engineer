@@ -23,21 +23,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={inter.className}
-        style={{
-          backgroundImage: 'url("/images/background.jpg")',
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      >
-        <div className="mx-auto max-w-[95%] md:max-w-[90%] my-5 md:my-10">
-          <Navbar />
-          <Sidebar />
-          <WhatsappButton />
-          {children}
-        </div>
+      <body className={inter.className + " bg-white"}>
+        <Navbar />
+        <Sidebar />
+        <WhatsappButton />
+        {children}
       </body>
     </html>
   );
