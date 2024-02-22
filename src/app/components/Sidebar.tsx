@@ -25,12 +25,12 @@ const Sidebar = () => {
         >
           {showSidebar ? (
             <FaArrowCircleLeft
-              className="md:hidden text-primary text-2xl bg-white rounded-full"
+              className="md:hidden text-primary text-2xl bg-gray-300 rounded-full"
               onClick={() => setShowSidebar(false)}
             />
           ) : (
             <FaArrowCircleRight
-              className="md:hidden text-primary text-2xl bg-white rounded-full"
+              className="md:hidden text-primary text-2xl bg-gray-300 rounded-full"
               onClick={() => setShowSidebar(true)}
             />
           )}
