@@ -58,7 +58,7 @@ const Navbar = () => {
             </Main>
           </div>
         </div>
-        <div className="bg-primary w-[85%] hidden sm:block absolute left-1/2 transform -translate-x-1/2 top-12 border border-gray-500">
+        <div className="bg-primary w-[85%] hidden sm:block absolute left-1/2 transform -translate-x-1/2 top-12 border border-gray-500 z-10">
           <ul className="flex list-none items-center justify-around mx-5 my-3">
             {constants.routes.map((route) => (
               <li key={route.label}>

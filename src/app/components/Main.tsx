@@ -82,7 +82,7 @@ const Main = ({
       </button>
       {!hide && (
         <div
-          className="fixed w-screen h-full top-0 left-0"
+          className="fixed w-screen h-full top-0 left-0 z-50"
           onMouseDown={eventListenerToggle}
           onScroll={eventListenerToggle}
         ></div>
