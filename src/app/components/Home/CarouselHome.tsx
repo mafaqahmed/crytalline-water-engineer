@@ -18,7 +18,7 @@ const CarouselHome = () => {
       <Slider {...settings}>
         <div>
           <div
-            className="w-full h-[90vh]"
+            className="w-full h-[91vh]"
             style={{
               backgroundImage: 'url("/images/image1.jpg")',
               backgroundRepeat: "no-repeat",
@@ -29,7 +29,7 @@ const CarouselHome = () => {
         </div>
         <div>
           <div
-            className="w-full h-[90vh]"
+            className="w-full h-[91vh]"
             style={{
               backgroundImage: 'url("/images/image2.jpg")',
               backgroundRepeat: "no-repeat",
@@ -40,7 +40,7 @@ const CarouselHome = () => {
         </div>
         <div>
           <div
-            className="w-full h-[90vh]"
+            className="w-full h-[91vh]"
             style={{
               backgroundImage: 'url("/images/image3.jpg")',
               backgroundRepeat: "no-repeat",
