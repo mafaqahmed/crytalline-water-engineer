@@ -19,7 +19,7 @@ const TestimonialHome = () => {
             <div key={ind}>
               <div className="w-full flex items-center justify-between font-semibold text-primary text-[0.9rem] md:text-base mb-3 gap-3">
                 <p>{testimonial.label}</p>
-                <p className="whitespace-nowrap">{testimonial.progress} %</p>
+                <p className="whitespace-nowrap">{testimonial.progress}%</p>
               </div>
               <ProgressBar progress={testimonial.progress} />
             </div>
