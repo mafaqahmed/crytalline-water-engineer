@@ -8,7 +8,7 @@ const ProgressBar = ({ progress }: { progress: number }) => {
         style={{
           width: progress + "%",
           backgroundImage:
-            "repeating-linear-gradient(-45deg, blue 0%, rgba(201,201,212,1) 2%)",
+            "repeating-linear-gradient(-45deg, blue 0%, blue 1%, #3588EE 1%, #3588EE 2%)",
         }}
       ></div>
     </div>
