@@ -22,6 +22,7 @@ const config: Config = {
       },
       screens: {
         "mobile-sm": "380px",
+        featuresc: "1080px",
       },
     },
   },
