@@ -28,7 +28,7 @@ const HomeAbout = () => {
         <p className="text-gray-600 text-sm font-medium mt-4 mb-1 ">
           We deal with:
         </p>
-        <ul className="text-xs md:text-sm space-y-1 font-semibold tracking-wide md:tracking-widest text-gray-900 list-disc ml-5">
+        <ul className="text-xs md:text-sm space-y-1 font-semibold tracking-wide md:tracking-wider text-gray-900 list-disc ml-5">
           <li>
             <p>Domestic and industrial water filteration plant</p>
           </li>
