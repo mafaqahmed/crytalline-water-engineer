@@ -2,7 +2,7 @@
 
 const HomeAbout = () => {
   return (
-    <div className="my-20 md:my-32 max-w-[95%] mx-auto flex flex-col-reverse md:flex-row items-center md:space-x-10">
+    <div className="my-20 md:my-32 max-w-[90%] mx-auto flex flex-col-reverse md:flex-row items-center md:space-x-10">
       <div className="mt-5 md:mt-0">
         <img src="/images/image4.jpg" alt="" width={3000} />
       </div>
@@ -30,10 +30,10 @@ const HomeAbout = () => {
         </p>
         <ul className="text-xs md:text-sm space-y-1 font-semibold tracking-widest text-gray-900 list-disc ml-5">
           <li>
-            <p>Domestic and industrial water filteration plan</p>
+            <p>Domestic and industrial water filteration plant</p>
           </li>
           <li>
-            <p>Multimedia fFilter plant</p>
+            <p>Multimedia filter plant</p>
           </li>
           <li>
             <p>Water Softner plant</p>
