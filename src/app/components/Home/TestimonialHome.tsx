@@ -4,7 +4,7 @@ import ProgressBar from "../ProgressBar";
 const TestimonialHome = () => {
   return (
     <div className="bg-ternary">
-      <div className="max-w-[90%] mx-auto py-16">
+      <div className="max-w-[80%] mx-auto py-16">
         <div className="md:mt-4 mb-14">
           <h1 className="text-red-700 text-center font-bold text-3xl">
             Testimonials
