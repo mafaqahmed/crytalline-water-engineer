@@ -67,14 +67,21 @@ const CarouselHomeTwo = () => {
     pauseOnHover: false,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1326,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 986,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
         },
       },
       {
-        breakpoint: 400,
+        breakpoint: 564,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
