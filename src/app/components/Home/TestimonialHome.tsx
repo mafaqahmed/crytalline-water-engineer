@@ -14,7 +14,7 @@ const TestimonialHome = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
           {constants.testimonials.map((testimonial, ind) => (
             <div key={ind}>
               <div className="w-full flex items-center justify-between font-semibold text-primary text-[0.9rem] md:text-base mb-3 gap-3">
