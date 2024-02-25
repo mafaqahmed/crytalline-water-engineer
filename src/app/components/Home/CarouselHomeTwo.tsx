@@ -84,7 +84,7 @@ const CarouselHomeTwo = () => {
           {data.map((el, ind) => (
             <div
               key={el.title + ind}
-              className="space-y-4 px-5 border-r-2 border-gray-400 h-52 md:h-48 overflow-hidden"
+              className="space-y-4 px-5 border-r-2 border-l-2 border-gray-400 h-52 md:h-48 overflow-hidden"
             >
               <el.icon className="mx-auto text-5xl text-[#194DA8]" />
               <div className="text-center">
