@@ -11,7 +11,7 @@ export default function FeaturesHome() {
       </div>
       <div className="featuresc:grid featuresc:grid-cols-[50%_50%]">
         <div className="w-full relative justify-center items-center">
-          <div className="absolute font-extrabold text-[4rem] sm:text-[6.875rem] leading-[110px] opacity-[0.07] text-[#212121] z-10">
+          <div className="absolute font-extrabold text-[4rem] sm:text-[6.875rem] leading-[80px] sm:leading-[110px] opacity-[0.07] text-[#212121] z-10">
             Different from others
           </div>
           <div className="grid grid-cols-[50%_50%] h-full">
