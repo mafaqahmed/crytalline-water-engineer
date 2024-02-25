@@ -14,12 +14,12 @@ const TestimonialHome = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-16">
           {constants.testimonials.map((testimonial, ind) => (
             <div key={ind}>
-              <div className="w-full flex items-center justify-between font-semibold text-primary text-[0.9rem] md:text-base mb-3 gap-3">
-                <p>{testimonial.label}</p>
-                <p className="whitespace-nowrap">{testimonial.progress}%</p>
+              <div className="w-full font-semibold text-primary text-[0.9rem] md:text-base mb-3 gap-3">
+                <p className="text-center">{testimonial.label}</p>
+                {/* <p className="whitespace-nowrap">{testimonial.progress}%</p> */}
               </div>
               <ProgressBar progress={testimonial.progress} />
             </div>
