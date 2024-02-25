@@ -11,6 +11,7 @@ const CarouselHome = () => {
     speed: 300,
     arrows: false,
     autoplay: true,
+    pauseOnHover: false,
   };
 
   return (
