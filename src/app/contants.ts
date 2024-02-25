@@ -58,6 +58,11 @@ const constants = {
       color: "#194DA8",
     },
   ],
+  metadata: {
+    businessName: "Crystaline Water Engineer",
+    businessPhone: "(+92) 333 7734529",
+    businessUrl: "https://crystalline-water-engineer.vercel.app/",
+  },
 };
 
 export default constants;

@@ -1,5 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 
+import constants from "@/app/contants";
+
 const HomeAbout = () => {
   return (
     <div className="my-20 md:my-32 max-w-[90%] mx-auto flex flex-col-reverse md:flex-row items-center md:space-x-10">
@@ -10,11 +12,11 @@ const HomeAbout = () => {
         <p className="text-red-700 font-semibold">Discover</p>
         <p className="text-slate-800 font-bold">
           <span className="text-red-700 font-extrabold text-3xl">
-            Crystalline Water Engineer
+            {constants.metadata.businessName}
           </span>
           <span className="ml-1 text-2xl">
-            - Get clean, safe, and reliable water with Crystaline Water
-            Engineers.
+            - Get clean, safe, and reliable water with{" "}
+            {constants.metadata.businessName}.
           </span>
         </p>
         <p className="text-gray-600 text-sm mt-5">

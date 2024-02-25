@@ -27,11 +27,11 @@ const Navbar = () => {
             </div>
             <div className="flex gap-2 items-center">
               <Link
-                href="tel:+923337734529"
+                href={`tel:${constants.metadata.businessPhone}`}
                 target="_blank"
                 className="text-xs hover:underline"
               >
-                (+92) 333 773 4529
+                {constants.metadata.businessPhone}
               </Link>
               <button className="bg-secondary text-white rounded-sm cursor-pointer px-1 py-[2px] hover:bg-ternary ease-in-out hidden sm:block">
                 New Project
