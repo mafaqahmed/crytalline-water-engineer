@@ -92,7 +92,7 @@ const CarouselHomeTwo = () => {
 
   return (
     <>
-      <div className="my-20 md:my-32 max-w-[90%] mx-auto">
+      <div className="my-20 md:my-32 max-w-[90%] mx-auto overflow-hidden">
         <Slider {...settings}>
           {data.map((el, ind) => (
             <div
