@@ -1,27 +1,27 @@
 const constants = {
   testimonials: [
     {
-      label: "Combination of latest and best technologies",
+      label: "Latest and Best Technologies",
       progress: 100,
     },
     {
-      label: "Very competetive price",
+      label: "Market Competetive Price",
       progress: 100,
     },
     {
-      label: "Exceptional after sale",
+      label: "Exceptional after Sale",
       progress: 100,
     },
     {
-      label: "Latest products with best quality",
+      label: "Latest Products with Best Quality",
       progress: 100,
     },
     {
-      label: "Service and Support",
+      label: "All Time Service and Support",
       progress: 100,
     },
     {
-      label: "Flawless execution and start up",
+      label: "Flawless Execution and Start Up",
       progress: 100,
     },
     {
@@ -29,7 +29,7 @@ const constants = {
       progress: 100,
     },
     {
-      label: "And last but not least, satisfied customers",
+      label: "Contented and Satisfied Customers",
       progress: 100,
     },
   ],
