@@ -123,6 +123,10 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
+        <link
+          rel="stylesheet"
+          href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css"
+        />
         <Navbar />
         <Sidebar />
         <WhatsappButton />
