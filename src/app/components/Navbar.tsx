@@ -38,6 +38,8 @@ const Navbar = () => {
               </button>
             </div>
           </div>
+
+          {/* Mobile Navbar */}
           <div className="sm:hidden">
             <Main Icon={IoMdMenu}>
               <div className="bg-black rounded-md w-56 h-auto">
@@ -58,11 +60,18 @@ const Navbar = () => {
             </Main>
           </div>
         </div>
+        {/* Full Size Navbar */}
         <div className="bg-primary w-[85%] hidden sm:block absolute left-1/2 transform -translate-x-1/2 top-12 border border-gray-500 z-10">
-          <ul className="flex list-none items-center justify-around mx-5 my-3">
+          <ul className="flex list-none items-center mx-5">
             {constants.routes.map((route) => (
-              <li key={route.label}>
-                <Link className="hover:underline" href={route.link}>
+              <li
+                key={route.label}
+                className="flex-grow hover:bg-orange-500 basis-10"
+              >
+                <Link
+                  className="block py-3 w-full text-center"
+                  href={route.link}
+                >
                   {route.label}
                 </Link>
               </li>
