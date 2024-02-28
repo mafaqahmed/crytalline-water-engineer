@@ -62,6 +62,9 @@ const constants = {
     businessName: "Crystaline Water Engineer",
     businessPhone: "(+92) 333 7734529",
     businessUrl: "https://crystalline-water-engineer.vercel.app/",
+    businessAddress:
+      "1st floor, Zafaar Plaza near Chaklala Cantonment Hospital, Dheri Hassanabad, Rawalpindi",
+    businessEmail: "asifali@gmail.com",
   },
 };
 
