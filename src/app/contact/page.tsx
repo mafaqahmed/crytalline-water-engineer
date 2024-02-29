@@ -1,5 +1,5 @@
-/* eslint-disable @next/next/no-img-element */
 "use client";
+/* eslint-disable @next/next/no-img-element */
 import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
 
 import { FaMapMarkedAlt, FaPhoneSquareAlt, FaMailchimp } from "react-icons/fa";
