@@ -6,7 +6,7 @@ import { FaMapMarkedAlt, FaPhoneSquareAlt, FaMailchimp } from "react-icons/fa";
 
 import constants from "../contants";
 
-export default function Contact() {
+export default function Page() {
   return (
     <>
       <section className="font-sans text-black">
