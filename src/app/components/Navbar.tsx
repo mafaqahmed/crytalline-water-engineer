@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 import { IoMdMenu } from "react-icons/io";
 
@@ -8,6 +9,7 @@ import constants from "../contants";
 import Main from "./Main";
 
 const Navbar = () => {
+  const pathname = usePathname();
   return (
     <>
       <nav className="relative">
@@ -46,7 +48,12 @@ const Navbar = () => {
                 <ul className="list-none  px-5 mt-2 py-3 text-sm">
                   {constants.routes.map((route) => (
                     <li key={route.label}>
-                      <Link className="hover:underline" href={route.link}>
+                      <Link
+                        className={`block p-2 rounded-sm ${
+                          pathname === route.link ? "bg-orange-500" : ""
+                        }`}
+                        href={route.link}
+                      >
                         {route.label}
                       </Link>
                       <hr className="mt-1 mb-2 border-t border-gray-500" />
@@ -61,12 +68,14 @@ const Navbar = () => {
           </div>
         </div>
         {/* Full Size Navbar */}
-        <div className="bg-primary w-[85%] hidden sm:block absolute left-1/2 transform -translate-x-1/2 top-12 border border-gray-500 z-10">
-          <ul className="flex list-none items-center mx-5">
+        <div className="bg-primary w-[85%] hidden sm:block absolute left-1/2 transform -translate-x-1/2 top-12 border-t border-t-gray-500 z-10">
+          <ul className="flex list-none items-center mx-0">
             {constants.routes.map((route) => (
               <li
                 key={route.label}
-                className="flex-grow hover:bg-orange-500 basis-10"
+                className={`flex-grow hover:bg-orange-300 basis-10 ease-in-out duration-300 ${
+                  pathname === route.link ? "bg-orange-500" : ""
+                }`}
               >
                 <Link
                   className="block py-3 w-full text-center"
