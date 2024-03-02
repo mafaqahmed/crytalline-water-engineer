@@ -15,10 +15,10 @@ const Navbar = () => {
           <div className="text-gray-300 text-sm flex flex-col sm:flex-row items-center sm:justify-between">
             <div className="flex gap-1 items-center">
               <Image
-                src="https://flowbite.com/docs/images/logo.svg"
+                src="/images/logo.png"
                 className="h-8"
                 alt="Flowbite Logo"
-                width={50}
+                width={40}
                 height={100}
               />
               <div className="text-md mobile-sm:text-lg">
