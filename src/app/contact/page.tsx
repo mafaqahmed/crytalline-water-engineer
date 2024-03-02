@@ -1,10 +1,9 @@
 "use client";
 /* eslint-disable @next/next/no-img-element */
-import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
-
 import { FaMapMarkedAlt, FaPhoneSquareAlt, FaMailchimp } from "react-icons/fa";
 
 import constants from "../contants";
+import { MapComponent } from "../components/Map/MapComponent";
 
 export default function Page() {
   return (
@@ -148,20 +147,7 @@ export default function Page() {
               </div>
             </form>
             <div className="w-full h-80">
-              <MapContainer
-                center={[33.5856747, 73.0895837]}
-                zoom={13}
-                scrollWheelZoom={false}
-                style={{ height: "100%", width: "100%" }}
-              >
-                <TileLayer
-                  attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-                  url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-                />
-                <Marker position={[33.5856747, 73.0895837]}>
-                  <Popup>{constants.metadata.businessAddress}</Popup>
-                </Marker>
-              </MapContainer>
+              <MapComponent />
             </div>
           </div>
         </div>
