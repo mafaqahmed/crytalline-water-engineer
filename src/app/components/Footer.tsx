@@ -13,8 +13,25 @@ const Footer = () => {
       </div>
 
       <div className="relative px-4 py-16 sm:px-6 lg:col-span-3 lg:px-8">
+        <div
+          className="w-full h-full absolute top-0 left-0"
+          style={{
+            backgroundImage: 'url("/images/logo.png")',
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+            opacity: "0.2",
+          }}
+        ></div>
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 bg-transparent">
           <div>
+            <img
+              src="/images/logo-detail.png"
+              alt="logo"
+              width={250}
+              className="mb-3"
+            />
+
             <p>
               <span className="text-xs uppercase tracking-wide text-gray-500">
                 Call us
