@@ -9,9 +9,9 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        primary: "#002952",
-        secondary: "#FDE428",
-        ternary: "#E2E6E9",
+        primary: "rgb(234, 88, 12)",
+        secondary: "#002952",
+        ternary: "#B91C1C",
         positive: "#fbbc04",
         negative: "#21BA45",
       },
@@ -22,6 +22,7 @@ const config: Config = {
       },
       screens: {
         "mobile-sm": "380px",
+        "sm-lg": "940px",
         featuresc: "1080px",
       },
     },
