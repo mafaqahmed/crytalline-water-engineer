@@ -16,7 +16,7 @@ const Sidebar = () => {
   }, []);
 
   return (
-    <div className="fixed left-0 top-1/2 transform -translate-y-1/2 z-10">
+    <div className="fixed left-0 top-1/2 transform -translate-y-1/2 z-50">
       <div className="relative">
         <div
           className={`absolute -right-7 top-1/2 transform -translate-y-1/2 transition-transform duration-300 ${
