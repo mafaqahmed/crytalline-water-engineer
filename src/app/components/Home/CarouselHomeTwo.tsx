@@ -93,6 +93,15 @@ const CarouselHomeTwo = () => {
   return (
     <>
       <div className="my-20 md:my-32 max-w-[90%] mx-auto overflow-hidden">
+        <div className="mb-16">
+          <h1 className="font-bold text-3xl sm:text-5xl text-center text-ternary">
+            Why Choose Us?
+          </h1>
+          <p className="text-center text-gray-400 text-sm">
+            All water treatment related issues are solved here with latest
+            technology and industrial standards.
+          </p>
+        </div>
         <Slider {...settings}>
           {data.map((el, ind) => (
             <div
@@ -104,10 +113,10 @@ const CarouselHomeTwo = () => {
                 style={{ color: el.color }}
               />
               <div className="text-center">
-                <p className="text-primary font-bold text-xl mb-1">
+                <p className="text-secondary font-bold text-xl mb-1">
                   {el.title}
                 </p>
-                <p className="text-gray-600 text-sm">{el.description}</p>
+                <p className="text-secondary text-sm">{el.description}</p>
               </div>
             </div>
           ))}
