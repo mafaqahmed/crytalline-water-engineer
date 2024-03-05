@@ -1,0 +1,31 @@
+/* Navbar styles */
+.navbar {
+  padding: 10px 0;
+  text-align: center;
+}
+
+.navbar li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.navbar a {
+  text-decoration: none;
+  position: relative;
+}
+
+/* Border bottom animation */
+.navbar a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px; /* Adjust this value according to your design */
+  height: 2px; /* Border height */
+  width: 0;
+  background-color: #333;
+  transition: width 0.3s ease;
+}
+
+.navbar a:hover::after {
+  width: 100%;
+}

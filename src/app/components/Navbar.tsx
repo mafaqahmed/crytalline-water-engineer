@@ -4,17 +4,20 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 import { IoMdMenu } from "react-icons/io";
+import { FaPhone } from "react-icons/fa6";
 
 import constants from "../contants";
 import Main from "./Main";
+
+import styles from "../styles/Navbar.module.css"; // Import your CSS module
 
 const Navbar = () => {
   const pathname = usePathname();
   return (
     <>
       <nav className="relative">
-        <div className="bg-primary flex items-center justify-between sm:block px-5 py-3">
-          <div className="text-gray-300 text-sm flex flex-col sm:flex-row items-center sm:justify-between">
+        <div className="bg-white flex items-center justify-between md:block px-5 py-3">
+          <div className="text-secondary text-sm flex flex-col md:flex-row items-center md:justify-between gap-2 md:gap-7">
             <div className="flex gap-1 items-center">
               <Image
                 src="/images/logo.png"
@@ -23,34 +26,59 @@ const Navbar = () => {
                 width={40}
                 height={100}
               />
-              <div className="text-md mobile-sm:text-lg">
+              <div className="text-md sm-lg:text-lg">
                 Crystaline Water Engineer
               </div>
             </div>
-            <div className="flex gap-2 items-center">
+            <div className="hidden md:block flex-1">
+              <ul
+                className={`flex list-none items-center mx-0 ${styles.navbar}`}
+              >
+                {constants.routes.map((route) => (
+                  <li
+                    key={route.label}
+                    className={`flex-grow hover:text-gray-500 basis-10 text-md sm-lg:text-[1rem] ${
+                      pathname === route.link
+                        ? "border-b-2 border-secondary"
+                        : ""
+                    }`}
+                  >
+                    <Link
+                      className="block py-3 w-full text-center"
+                      href={route.link}
+                    >
+                      {route.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div>
               <Link
                 href={`tel:${constants.metadata.businessPhone}`}
                 target="_blank"
-                className="text-xs hover:underline"
+                className="text-primary text-md sm-lg:text-lg font-medium hover:underline flex items-center gap-3"
               >
-                {constants.metadata.businessPhone}
+                <span>
+                  <FaPhone />
+                </span>
+                <span>{constants.metadata.businessPhone}</span>
               </Link>
-              <button className="bg-secondary text-white rounded-sm cursor-pointer px-1 py-[2px] hover:bg-ternary ease-in-out hidden sm:block">
-                New Project
-              </button>
             </div>
           </div>
 
           {/* Mobile Navbar */}
-          <div className="sm:hidden">
+          <div className="md:hidden">
             <Main Icon={IoMdMenu}>
-              <div className="bg-black rounded-md w-56 h-auto">
-                <ul className="list-none  px-5 mt-2 py-3 text-sm">
+              <div className="bg-secondary rounded-md w-56 h-auto">
+                <ul
+                  className={`flex flex-col list-none px-5 mt-2 py-3 text-sm text-center`}
+                >
                   {constants.routes.map((route) => (
                     <li key={route.label}>
                       <Link
                         className={`block p-2 rounded-sm ${
-                          pathname === route.link ? "bg-orange-500" : ""
+                          pathname === route.link ? "bg-primary" : ""
                         }`}
                         href={route.link}
                       >
@@ -60,32 +88,9 @@ const Navbar = () => {
                     </li>
                   ))}
                 </ul>
-                <button className="bg-secondary text-white w-[83%] mx-5 mb-2 rounded-sm cursor-pointer px-1 py-[2px] hover:bg-ternary ease-in-out">
-                  New Project
-                </button>
               </div>
             </Main>
           </div>
-        </div>
-        {/* Full Size Navbar */}
-        <div className="bg-primary w-[85%] hidden sm:block absolute left-1/2 transform -translate-x-1/2 top-12 border-t border-t-gray-500 z-10">
-          <ul className="flex list-none items-center mx-0">
-            {constants.routes.map((route) => (
-              <li
-                key={route.label}
-                className={`flex-grow hover:bg-orange-300 basis-10 ease-in-out duration-300 ${
-                  pathname === route.link ? "bg-orange-500" : ""
-                }`}
-              >
-                <Link
-                  className="block py-3 w-full text-center"
-                  href={route.link}
-                >
-                  {route.label}
-                </Link>
-              </li>
-            ))}
-          </ul>
         </div>
       </nav>
     </>
