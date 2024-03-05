@@ -27,7 +27,7 @@ const Navbar = () => {
                 height={100}
               />
               <div className="text-md sm-lg:text-lg">
-                Crystaline Water Engineer
+                Crystalline Water Engineer
               </div>
             </div>
             <div className="hidden md:block flex-1">

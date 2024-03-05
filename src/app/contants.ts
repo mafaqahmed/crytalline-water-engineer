@@ -59,7 +59,7 @@ const constants = {
     },
   ],
   metadata: {
-    businessName: "Crystaline Water Engineer",
+    businessName: "Crystalline Water Engineer",
     businessPhone: "(+92) 333 7734529",
     businessUrl: "https://crystalline-water-engineer.vercel.app/",
     businessAddress:

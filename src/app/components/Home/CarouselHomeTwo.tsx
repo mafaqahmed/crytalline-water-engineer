@@ -15,7 +15,7 @@ const CarouselHomeTwo = () => {
     {
       title: "Efficiently serving all aross pakistan",
       description:
-        "Pure water, Pakistan-wide. Crystaline Water Engineer cover every corner. Clean water, guaranteed.",
+        "Pure water, Pakistan-wide. Crystalline Water Engineer cover every corner. Clean water, guaranteed.",
       icon: AiOutlineGlobal,
       color: "#194DA8",
     },
