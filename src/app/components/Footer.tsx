@@ -32,14 +32,14 @@ const Footer = () => {
               className="mb-3"
             />
 
-            <p>
+            <p className="text-primary">
               <span className="text-xs uppercase tracking-wide text-gray-500">
                 Call us
               </span>
 
               <a
                 href="#"
-                className="block text-2xl font-medium text-gray-900 hover:opacity-75 sm:text-3xl"
+                className="block text-2xl font-medium hover:opacity-75 sm:text-3xl"
               >
                 {constants.metadata.businessPhone}
               </a>
