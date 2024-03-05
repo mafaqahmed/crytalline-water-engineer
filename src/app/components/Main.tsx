@@ -78,7 +78,7 @@ const Main = ({
   return (
     <>
       <button onClick={onToggle}>
-        {Icon && <Icon className="text-lg text-gray-300" />}
+        {Icon && <Icon className="text-lg text-secondary" />}
       </button>
       {!hide && (
         <div
