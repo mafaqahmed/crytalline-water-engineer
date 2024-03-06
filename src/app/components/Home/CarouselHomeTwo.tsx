@@ -91,9 +91,9 @@ const CarouselHomeTwo = () => {
   };
 
   return (
-    <>
-      <div className="my-20 md:my-32 max-w-[90%] mx-auto overflow-hidden">
-        <div className="mb-16">
+    <div className="py-20 my-10 md:my-16">
+      <div className="max-w-[90%] mx-auto overflow-hidden">
+        <div className="mb-20 sm:mb-28">
           <h1 className="font-bold text-3xl sm:text-5xl text-center text-ternary">
             Why Choose Us?
           </h1>
@@ -122,7 +122,7 @@ const CarouselHomeTwo = () => {
           ))}
         </Slider>
       </div>
-    </>
+    </div>
   );
 };
 
