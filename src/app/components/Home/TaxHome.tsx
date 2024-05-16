@@ -18,7 +18,7 @@ const TaxHome = () => {
           solutions.
         </p>
       </div>
-      <div className="max-w-[90%] mx-auto flex flex-col lg:flex-row items-center justify-center gap-8 ">
+      {/* <div className="max-w-[90%] mx-auto flex flex-col lg:flex-row items-center justify-center gap-8 ">
         <div className="flex flex-col sm:flex-row gap-3 w-full">
           <img src="/images/membership.jpg" alt="" width={300} />
           <p className="mt-2">
@@ -41,7 +41,7 @@ const TaxHome = () => {
             </span>
           </p>
         </div>
-      </div>
+      </div> */}
       <div
         className="w-full h-full absolute top-0 left-0 -z-10"
         style={{
